@@ -48,7 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: Landing_production
-  username: Landing
-  password: <%= ENV['LANDING_DATABASE_PASSWORD'] %>
+  adapter:  mysql2
+  encoding: utf8
+  database: leafitdb
+  username: root
+  password: Carl.Sagan
